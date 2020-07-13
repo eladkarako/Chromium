@@ -1,0 +1,1 @@
+"C:\Users\Elad\AppData\Local\Google\Chrome SxS\Application\chrome.exe" --force-device-scale-factor="1.3" --ignore-certificate-errors --disable-logging --enable-stale-while-revalidate --enable-offline-load-stale-cache

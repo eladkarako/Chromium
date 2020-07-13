@@ -1,0 +1,18 @@
+#explicit - Windows EOL
+*.ini       text    eol=crlf
+*.manifest  text    eol=crlf
+*.cmd       text    eol=crlf
+*.js        text    eol=crlf
+*.txt       text    eol=crlf
+README.md           eol=crlf
+.gitattributes      eol=crlf
+.gitignore          eol=crlf
+
+#explicit - reduced diff
+*.exe       binary
+*.gif       binary
+*.png       binary
+*.jpg       binary
+
+
+

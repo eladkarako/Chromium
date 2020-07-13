@@ -1,0 +1,6 @@
+/profile/*
+!/profile/.placeholder
+
+/application/*
+!/application/.placeholder
+

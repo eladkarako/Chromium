@@ -1,0 +1,26 @@
+# Type of Chromium builds:
+#
+# dev-official
+#	Official development builds from snapshots repository
+#	"storage.googleapis.com/chromium-browser-snapshots/index.html" (32/64 bit)
+#
+# stable-codecs-sync
+#	Unofficial stable builds with codecs
+#	"github.com/macchrome/winchrome/releases" (32/64 bit)
+#
+# dev-nosync
+#	Unofficial development builds without Google services
+#	"github.com/RobRich999/Chromium_Clang/releases" (32/64 bit)
+#
+# dev-codecs-sync
+#	Unofficial development builds with codecs and without Google services
+#	"github.com/macchrome/winchrome/releases" (64 bit)
+#
+# dev-codecs-nosync
+#	Unofficial development builds with codecs and without Google services
+#	"github.com/macchrome/winchrome/releases" (64 bit)
+#
+# ungoogled-chromium
+#	Unofficial builds without Google integration and enhanced privacy (based on Eloston project)
+#	"github.com/macchrome/winchrome/releases/" (32/64 bit)
+#	"github.com/Eloston/ungoogled-chromium"

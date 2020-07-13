@@ -1,0 +1,11 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers]
+"C:\\Users\\Elad\\AppData\\Local\\Chromium\\Application\\chrome.exe"="RUNASADMIN"
+"C:\\Users\\Elad\\AppData\\Local\\Chromium\\Application\\chrome_proxy.exe"="RUNASADMIN"
+"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"="RUNASADMIN"
+"C:\\Program Files\\Google\\Chrome\\Application\\chrome_proxy.exe"="RUNASADMIN"
+"C:\\Program Files\\Google\\Chrome Beta\\Application\\chrome.exe"="RUNASADMIN"
+"C:\\Program Files\\Google\\Chrome Beta\\Application\\chrome_proxy.exe"="RUNASADMIN"
+"C:\\Program Files\\Google\\Chrome Dev\\Application\\chrome.exe"="RUNASADMIN"
+"C:\\Program Files\\Google\\Chrome Dev\\Application\\chrome_proxy.exe"="RUNASADMIN"

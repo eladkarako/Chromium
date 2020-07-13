@@ -1,0 +1,8 @@
+profile\Crashpad\*
+profile\ShaderCache\GPUCache\*
+Default\GPUCache\*
+profile\Default\Cache\*
+profile\Default\Media Cache\*
+profile\Default\Service Worker\CacheStorage\*
+profile\Default\Service Worker\ScriptCache\*
+profile\Default\Storage\ext\chrome-signin\def\GPUCache\*

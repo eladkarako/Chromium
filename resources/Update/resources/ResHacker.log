@@ -1,0 +1,5 @@
+[18 מאי 2018, 21:17:35]
+"resources\ResHacker.exe"  "-extract" "mini_installer.exe,versioninfo.rc,VERSIONINFO,,"
+  Extracted: VERSIONINFO,1,1033
+
+Commands completed
