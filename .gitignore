@@ -1,6 +1,17 @@
+#do not include profile (private information).
 /profile/*
-!/profile/.placeholder
+/new/profile/*
+/old/profile/*
 
+#do not include application (a lot of storage).
 /application/*
-!/application/.placeholder
+/new/application/*
+/old/application/*
 
+#DO include a placeholder to preserve the folder-tree-structure when committing to GitHub (normally empty folder would not be included).
+!/profile/.placeholder
+!/new/profile/.placeholder
+!/old/profile/.placeholder
+!/application/.placeholder
+!/new/application/.placeholder
+!/old/application/.placeholder
