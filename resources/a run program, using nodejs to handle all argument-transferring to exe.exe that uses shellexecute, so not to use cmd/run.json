@@ -1,0 +1,44 @@
+{
+  "description"        : "a chromium with codecs and sync support (only if use has a system-wide variables of Google API)."
+ ,"comments"           : [
+                          "--flag-switches-begin/--flag-switches-end is a nice way to know when user configurations starts and browser configurations (native or by chrome://flags) begins."
+                         ,"'###PROFILE_DIRECTORY###' will be replaced with (resolved) profile directory (will be used as a value for --user-data-dir=)"
+                         ]
+  ,"download-link"     : "https://github.com/macchrome/chromium/releases/download/v88.0.4284.0-r813632-Win64/Chrome-bin-sync.7z"
+
+  ,"runner"            : "./--_resources/exe.exe"
+  ,"execute"           : "./application/chrome.exe"
+  ,"working_directory" : "./application"
+  ,"profile_directory" : "./profile"
+
+  ,"arguments"         : [
+                           "--flag-switches-begin"
+                          ,"--user-data-dir=###PROFILE_DIRECTORY###"
+                          ,"--no-default-browser-check"
+                          ,"--ignore-autocomplete-off-autofill"
+                          ,"--allow-outdated-plugins"
+                          ,"--disable-logging"
+                          ,"--disable-breakpad"
+                          ,"--disable-crash-reporter"
+                          ,"--crash-server-url=https://0.0.0.0/"
+                          ,"--no-pings"
+                          ,"--force-device-scale-factor=1.30"
+                          ,"--ignore-certificate-errors"
+                          ,"--force-color-profile=srgb"
+                          ,"--enable-fast-unload"
+                          ,"--disable-features=OmniboxUIExperimentHideSteadyStateUrlSchemeAndSubdomains,OmniboxUIExperimentHideSteadyStateUrlTrivialSubdomains,OmniboxUIExperimentHideSteadyStateUrlPathQueryAndRef,OmniboxUIExperimentHideSteadyStateUrlScheme,ExtensionsToolbarMenu"
+                          ,"--enable-threaded-compositing"
+                          ,"--disable-canvas-aa"
+                          ,"--disable-2d-canvas-clip-aa"
+                          ,"--webgl-antialiasing-mode=none"
+                          ,"--disable-composited-antialiasing"
+                          ,"--ppapi-antialiased-text-enabled=0"
+                          ,"--ppapi-subpixel-rendering-setting=0"
+                          ,"--disable-font-subpixel-positioning"
+                          ,"--enable-stale-while-revalidate"
+                          ,"--enable-offline-load-stale-cache"
+                          ,"--enable-features=StaleWhileRevalidate2"
+                          ,"--flag-switches-end"
+                         ]
+  ,"run_mode"          : "SW_SHOWMAXIMIZED"
+}
