@@ -1,5 +1,8 @@
 additional custom version folder under:
   C:\Users\Elad\AppData\Local\Google\Chrome Dev\User Data\SwReporter
+  
+  for example:
+    D:\Software\Chromium\chrome_dev\profile\SwReporter\86.247.200\software_reporter_tool.exe
 
 directly under:
   C:\Users\Elad\AppData\Local\Google\Software Reporter Tool\
