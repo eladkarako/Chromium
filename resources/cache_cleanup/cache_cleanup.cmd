@@ -11,8 +11,9 @@ set "FILE_RM=%~sdp0rm.exe"
 ::                                                    2. calling a local procedure.
 ::                                                    3. passing one string (representing a path - no checks..) to the procedure.
 ::                                                    Note 1: "%LocalAppData%" is like "C:\Users\Elad\AppData\Local"
+::::::::::"%LocalAppData%\Google\Chrome Dev\User Data"  --- copied to here.
 for %%x in ( 
-  "%LocalAppData%\Google\Chrome Dev\User Data"
+  "..\..\chrome_dev\profile"
   "..\..\new\profile"
   "..\..\old\profile"
 ) do ( 
