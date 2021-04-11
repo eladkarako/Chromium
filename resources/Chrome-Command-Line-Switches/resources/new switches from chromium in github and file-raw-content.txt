@@ -1,0 +1,101 @@
+
+xxxx   there is a problem downloading due to multiple "same name" ("switches.cc"), 
+xxxx   in few URLs.
+xxxx   possible alternative #1: generate a "download file" (includes an output file name, and create a unique file-name based on the URL)
+xxxx   possible alternative #2: use auto rename. but in this case you need to pre-delete old files, and avoid conditional download since file-names may be different each time the download finishes.
+xxxx   ---- for now: manually opening all URLs in tabs (CTRL+click) and copying each's RAW-content... :|
+
+
+
+
+
+
+
+
+https://github.com/chromium/chromium/find/master
+
+look for switch.cc
+
+it will actually find *switch*\.*cc* (loose find),  
+you can create a new list to download/concat. 
+keep old versions since some of the old switches are still working.
+
+then run:
+--------------------------------------------------------------------------
+NodeList.prototype.map = Array.prototype.map;       //polyfill for NodeList.
+document.querySelectorAll('a.tree-browser-result')
+        .map(function(e){                           //HREF modifed into "RAW" mode (plain text)
+          return e.href
+                  .replace(/\/github.com\//i,"\/raw.githubusercontent.com\/")
+                  .replace(/\/blob\//i,"\/")
+        })
+        .sort()
+        .join('\r\n');
+--------------------------------------------------------------------------
+
+the code above query all the <A> elements, 
+extracts just the HREF attribute (".href" calculates a fully-qualified URL), 
+modifies the URL to point to the "RAW" (plain text) version of the file, 
+for example:
+    https://github.com/chromium/chromium/blob/master/weblayer/public/common/switches.cc
+  is changed into 
+    https://raw.githubusercontent.com/chromium/chromium/master/weblayer/public/common/switches.cc
+
+
+
+
+
+
+here is an example list:
+
+
+https://raw.githubusercontent.com/chromium/chromium/master/apps/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ash/constants/ash_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ash/public/cpp/ash_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ash/wm/switchable_windows.cc
+https://raw.githubusercontent.com/chromium/chromium/master/base/base_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/base/i18n/base_i18n_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/base/test/test_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/cc/base/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/chrome/browser/google/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/chrome/browser/lifetime/switch_utils.cc
+https://raw.githubusercontent.com/chromium/chromium/master/chrome/browser/video_tutorials/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/chromecast/net/net_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/chromeos/services/device_sync/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/autofill_assistant/browser/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/cast_certificate/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/embedder_support/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/metal_util/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/ntp_snippets/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/ntp_tiles/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/permissions/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/query_tiles/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/search_provider_logos/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/sync/invalidations/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/sync_bookmarks/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/sync_sessions/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/ui_devtools/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/viz/common/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/components/webapps/common/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/extensions/common/feature_switch.cc
+https://raw.githubusercontent.com/chromium/chromium/master/extensions/common/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/extensions/shell/common/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/fuchsia/engine/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/gpu/config/gpu_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/gpu/config/gpu_switching.cc
+https://raw.githubusercontent.com/chromium/chromium/master/media/base/media_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/media/midi/midi_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/media/webrtc/webrtc_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/remoting/host/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/sandbox/policy/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/services/service_manager/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/third_party/blink/common/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/base/ui_base_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/display/display_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/events/event_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/gfx/switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/gfx/x/x11_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/gl/gl_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/views/views_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/ui/wm/core/wm_core_switches.cc
+https://raw.githubusercontent.com/chromium/chromium/master/weblayer/public/common/switches.cc
