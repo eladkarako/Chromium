@@ -1,22 +1,29 @@
+#explicitly ignored files (mostly binary archives I can re-download).
+--_*
+
 #do not include profile (private information).
 /profile/*
 /new/profile/*
 /old/profile/*
 /chrome_dev/profile/*
+/tmpnew/profile/*
 
 #do not include application (a lot of storage).
 /application/*
 /new/application/*
 /old/application/*
 /chrome_dev/application/*
+/tmpnew/application/*
 
 #include .placeholder to keep folder-structure (normally GitHub will not include an empty folder).
 !/profile/.placeholder
 !/new/profile/.placeholder
 !/old/profile/.placeholder
 !/chrome_dev/profile/.placeholder
+!/tmpnew/profile/.placeholder
 
 !/application/.placeholder
 !/new/application/.placeholder
 !/old/application/.placeholder
 !/chrome_dev/application/.placeholder
+!/tmpnew/application/.placeholder
