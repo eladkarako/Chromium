@@ -12,10 +12,11 @@ set "FILE_RM=%~sdp0rm.exe"
 ::                                                    3. passing one string (representing a path - no checks..) to the procedure.
 ::                                                    Note 1: "%LocalAppData%" is like "C:\Users\Elad\AppData\Local"
 ::::::::::"%LocalAppData%\Google\Chrome Dev\User Data"  --- copied to here.
-::::::::::"..\..\chrome_dev\profile"
+:::::::::: C:\Users\Elad\AppData\Local\Chromium\User Data
 for %%x in ( 
   "..\..\new\profile"
   "..\..\old\profile"
+  "..\..\tmpnew\profile"
 ) do ( 
   call :METHOD__GENERIC_CLEAN %%x
 )
@@ -47,7 +48,7 @@ goto END
   call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\databases-incognito"
   call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\Feature Engagement Tracker"
   call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\GPUCache"
-  call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\IndexedDB"
+  rem call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\IndexedDB"
   call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\Media Cache"
   call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\Service Worker\CacheStorage"
   call "%FILE_RM%" --verbose --directory --force --no-preserve-root --recursive   "Default\Service Worker\ScriptCache"
